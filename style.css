@@ -1,0 +1,141 @@
+/*========================================================
+ This pattern is downloaded from www.subtlepatterns.com 
+ If you need more, that's where to get'em.
+ ========================================================*/
+ 
+body
+{
+	margin:0;
+	font-family: 'Nunito', sans-serif;
+}
+
+#container
+{
+
+	color:white;
+	width:100%;
+
+
+
+}
+
+#back_img
+{
+	min-height:100vh;
+	width:auto;
+	min-width:1000px;
+
+}
+
+#header
+{
+	width:300px;
+	font-size:60px;
+	margin:0 auto;
+	text-align:center;
+	padding-top:0px;
+	font-family: 'Kalam', cursive;
+	font-weight: bold;
+}
+
+#navbar
+{
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	max-width:800px;
+	width:80%;
+	margin:-10px auto;
+	padding:20px 0;
+	font-weight:bold;
+	font-size:22px;
+}
+
+.nav_item:hover
+{
+	color:#c0ad51;
+	cursor:pointer;
+}
+
+
+.content
+{
+	width:1200px;
+	margin:0 auto;
+	display:flex;
+	flex-wrap:wrap;
+	flex-shrink:0;
+}
+
+.menu_item
+{
+	padding:10px 0;
+	border-bottom:1px solid rgba(255,255,255,0.3);
+	margin:0 60px;
+	font-weight:bold;
+	font-size:14px;
+	width:480px;
+}
+
+.menu_item_price_mobile
+{
+	display:none;
+	color:#c0ad51;
+	text-align:center;
+	
+}
+
+.menu_item:nth-child(2n)
+{
+	break-after:always;
+}
+
+
+.menu_item_desc
+{
+	font-size:12px;
+	font-weight:normal;
+}
+
+.menu_item_wrapper
+{
+	display:flex;
+	justify-content:space-between;
+	color:#c0ad51;
+}
+
+@media screen and (max-width:1200px)
+{
+	.content
+	{
+		width:80%;
+		height:auto;
+	}
+	
+	.menu_item
+	{
+			margin:0 auto;
+			width:100%;
+			max-width:500px;
+	}
+	
+	#navbar
+	{
+		font-size:18px;
+	}
+	
+	
+	.nav_item:nth-child(3)
+	{
+		break-after:always;
+	}
+	
+	.menu_item_price_mobile
+	{
+	display:block;
+	}
+	.menu_item_price
+	{
+	display:none;
+	}
+}
